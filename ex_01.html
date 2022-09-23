@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula HTML, CSS3 e JS</title>
+    <style type="text/css">
+
+        body{
+            background: url("assets/images/trabalho1/back-phone.webp") no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        div.container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background: linear-gradient(rgba(0,0,0,0.1) 70%, rgba(0,0,0,0.2));
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        *{
+            box-sizing: border-box;   
+        }
+        
+        h1,h2,h3,h4,h5,h6{
+            margin: 0;
+            font-weight: 300;
+            font-family: 'Roboto', sans-serif;
+            color: #555;
+        }
+
+        body>div>h1.titulo{
+            color: red;
+        }
+
+        body>div.container>h1.titulo{
+            font-size: 2em;
+            color: #fff;
+        }
+
+        h2.titulo{
+            font-size: 1em;
+            color: #fff;
+        }
+
+        /*Daqui pra cima é tudo mobile*/
+
+        /*Tablet*/
+        @media (min-width: 768px){
+
+            body{
+                background: url("assets/images/trabalho1/back-tablet.webp") no-repeat;
+                background-size: cover;
+                background-position: center center;
+            }
+            
+            h1.titulo{
+            font-size: 3em;
+          
+            }
+            
+            h2.titulo{
+                font-size: 2em;
+            
+            }
+
+        }
+
+        /*Desktop*/
+        @media(min-width: 1280px) {
+
+            body{
+                background: url("assets/images/trabalho1/back-desck.webp") no-repeat;
+                background-size: cover;
+                background-position: center center;
+            }
+             
+            h1.titulo{
+                font-size: 3em;
+          
+            }
+
+            h2.titulo{
+                font-size: 2em;
+            
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="titulo">Seja Bem vindo ao Curso de HTML5, CSS3 e JavaScript</h1>
+        <h2 class="titulo">Estamos estudando no momento: <i>HTML5</i></h2>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Aula 21-09
+   * Dicas:
+     !    Como ter um site profissional:
+     ?       Usar fonte diferentes da fonte padrão do navegador;
+     ?       Sempre que possivel, tirar o negrito;
+     ?       Fugir de cores preta e primarias
+     ?       Usar imagens de alta definição
+
+   *     Como usar imagens:
+     ?       Tudo que for vetor (icones) serão tipo SVG;
+     ?       Só não será usado SVG se for colorido e com muitas cores;
+     ?       Não utilizar gradiente em SVG;
+     ?       Sempre que for usar imagens, vamos usar tipo webp, mas antes vamos comprimila de jpg para webp
+     ?       Arrastamos a foto para dentro do FIGMA
+     ?       Nunca vamos ter @media para celular
+-->
+
+<!-- Aula 22-09
+
+    !body>div>h1.titulo - Especifidade, quanto mais especifico, mais importante
+    * Estrutura CSS - 
+        ? seletores 
+        ? estrutura de declaração css, 
+        ? propriedade, separador, valor e fim da linha
+    
+    * Box-Sizing : border box 
+        ? Content Box: Tamanho da caixa varia de acordo com o seu conteudo
+        ! Border  Box: Tamanho da caixa limitado ao tamanho da borda
+        ? Box Model 
+            * Possui 4 lados:
+                ? Top 
+                ? Right 
+                ? Bottom
+                ? Left
+            * Possui 5 camadas mas vamos abordar 4:
+                ? Margin   -> Espaço em volta do elemento
+                ? Border   -> Borda do elemento
+                ? Paddin   -> Espaço dentro do conteudo
+                ? Conteudo -> Informação dentro da caixa
+    ! *Important* é importante quando o conteudo dinamico for gerado
+-->
