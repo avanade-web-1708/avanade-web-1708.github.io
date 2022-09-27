@@ -85,15 +85,15 @@ button:hover {
     background-size: cover;
     background-position: center center;
     .destak{
-        width: 40%;
+        width: 50%;
         height: 60vh;
         position: absolute;
-        bottom: 2%;
-        left: 10%;
+        bottom: 16%;
+        left: 2%;
         > h1{
             font-size: 3.5em;
             line-height: 1em;
-            font-weight: 340;
+            font-weight: 399;
             margin-bottom: 5%;
             margin-top: 2%;
         }
@@ -109,7 +109,7 @@ button:hover {
         }
     
         h3{
-            width: 90%;
+            width: 75%;
             background: rgba(36,36,36,0.35);
             color:  #fff;
             font-weight: normal;
@@ -140,7 +140,7 @@ button:hover {
     .full-banner{
         background: url("../images/c6bank/hero-desktop.webp") no-repeat;
         background-size: cover;   
-        
+        background-position: center center;
     }
 }
 
