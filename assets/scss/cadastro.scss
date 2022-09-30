@@ -1,0 +1,42 @@
+.main-container{
+    background: linear-gradient(150deg, #555 0%, #000 40%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container-login{
+        width: 420px;
+        height: 60vh;
+        display: flex;
+        .form-login{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+       
+            label{
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                color: #fff;
+                input{
+                    width: 100%;
+                }
+              
+            }
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
+            a:hover{
+                color: #555;
+                
+            }
+            bottom{
+                width: 50%;
+            }
+        }
+    }
+}
