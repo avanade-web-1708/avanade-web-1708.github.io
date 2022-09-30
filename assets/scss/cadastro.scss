@@ -40,3 +40,15 @@
         }
     }
 }
+
+button:hover{
+    transition: 0.3s;
+    width: 60%;
+}
+
+.mostrar_senha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8em;
+}

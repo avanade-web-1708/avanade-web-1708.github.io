@@ -14,3 +14,11 @@ function capturaSenha(){
 }
 
 confirmSenha.addEventListener('input', capturaSenha)
+
+function mostrarOcultarSenha(){
+    if(senha.type == "password"){
+        senha.type = "text"
+    }else{
+        senha.type = "password"
+    }
+}

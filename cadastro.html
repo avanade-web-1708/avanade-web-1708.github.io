@@ -27,7 +27,11 @@
                     *Confirme a senha
                     <input type="password" id="confirm-passoword" name="confirm-passoword" class="confirm-password" required placeholder="Confirme a senha" >
                 </label>
-                <button type="submit" onclick="capturaSenha()">Enviar</button>
+                <label for="mostrar_senha" class="mostrar_senha">
+                    Mostrar senha
+                    <input type="checkbox" name="check" id="check" class="check" onclick="mostrarOcultarSenha()">
+                </label>
+                <button type="submit" onsubmit="capturaSenha()">Enviar</button>
                 <p><a href="#">Esqueci a Senha</a></p>
                 <p><a href="#">Não sou cadastrado</a></p>
             </form>
