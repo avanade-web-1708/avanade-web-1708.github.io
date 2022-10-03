@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Aula</title>
+    <style>
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            
+        }
+        h1, h2{
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 200;
+            margin-bottom: 2%;
+            color: black;
+        }
+        select{
+            width: 180px;
+        }
+        nav{
+            width: 100%;
+            
+        }
+        body{
+            box-sizing: border-box;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        ul{
+            display: flex;
+            margin: 0;
+            width: 100%;
+            background: #232f3e;
+            height: 50px;
+        }
+        li{
+            list-style-type: none;
+            min-width: 110px;
+            text-align: center;
+            padding: 1% 1%;
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <nav></nav>
+    <main>
+        <h1>Aereas</h1>
+        <select name="aereas" id="aereas">
+            <option selected>-- Selecione --</option>
+        </select>
+    </main>
+    <script type="text/javascript" src="assets/js/desafioAula.js"></script>
+</body>
+</html>
