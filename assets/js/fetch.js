@@ -23,6 +23,8 @@ cep.addEventListener('blur', async (e) => {
         cache: 'default'
     }
 
+    
+
     //viacep.com.br/ws/01001000/json/
     //fetch vai gerar uma promisse. Promisse é uma promessa de algo que vai acontecer. 
     //Se der certo vai retornar o resultado, se der errado retornará um erro.
