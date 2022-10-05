@@ -12,9 +12,10 @@ const showData = (result) => {
 cep.addEventListener('blur', async (e) => {
     let search = cep.value.replace('-', '') //value fora de evento sempre vem vazio, precisa estar dentro de um EVENTO
     
-    if(search < 8 || Number(search) === NaN){
+    if(search < 8 || isNaN(search)){
         alert('CEP inválido')
-        return
+        cep.value = ''
+        return     
     }
 
     const options = {
@@ -22,8 +23,6 @@ cep.addEventListener('blur', async (e) => {
         mode: 'cors',
         cache: 'default'
     }
-
-    
 
     //viacep.com.br/ws/01001000/json/
     //fetch vai gerar uma promisse. Promisse é uma promessa de algo que vai acontecer. 
