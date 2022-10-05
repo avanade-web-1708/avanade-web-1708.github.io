@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEP</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+       body{
+        background: #cdb4e094;
+
+       }
+        section.cep{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        section.previsao{
+            width: 90%;
+            height: 80vh;
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+            border-radius: 25px;
+            box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.45);
+
+        }
+        main{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        div.dias{
+            width: 13%;
+            height: 55vh;
+            border-radius: 15px;
+            box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.50);
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+        p{
+            margin: 0;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        input{
+            outline: none;
+            border-radius: 5px;
+            border: 0.8px solid #444;
+            padding: 6px;
+            text-align: center;
+        }
+        section.semana{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+            
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="cep">
+            <label for="">
+                <p>Digite o CEP*</p>
+                <input type="text" required pattern="^\d{5}-?\d{3}$" maxlength="9">
+            </label>
+        </section>
+        <section class="previsao">
+            
+           <div class="cidade">
+            <h1>Nome Cidade</h1>
+           </div>
+           <section class="semana">
+            <div class="dias">
+                <p>Dia</p>
+                <div class="logo">
+                    logo
+                </div>
+                <div class="temperatura">
+                    temperatura
+                </div>
+            </div>
+
+            <div class="dias">
+                <p>Dia</p>
+                <div class="logo">
+                    logo
+                </div>
+                <div class="temperatura">
+                    temperatura
+                </div>
+            </div>
+
+            <div class="dias">
+                <p>Dia</p>
+                <div class="logo">
+                    logo
+                </div>
+                <div class="temperatura">
+                    temperatura
+                </div>
+            </div>
+
+            <div class="dias">
+                <p>Dia</p>
+                <div class="logo">
+                    logo
+                </div>
+                <div class="temperatura">
+                    temperatura
+                </div>
+            </div>
+
+            <div class="dias">
+                <p>Dia</p>
+                <div class="logo">
+                    logo
+                </div>
+                <div class="temperatura">
+                    temperatura
+                </div>
+            </div>
+
+            <div class="dias">
+                <p>Dia</p>
+                <div class="logo">
+                    logo
+                </div>
+                <div class="temperatura">
+                    temperatura
+                </div>
+            </div>
+
+            <div class="dias">
+                <p>Dia</p>
+                <div class="logo">
+                    logo
+                </div>
+                <div class="temperatura">
+                    temperatura
+                </div>
+            </div>
+           </section>
+        </section>
+        <section>
+
+        </section>
+    </main>
+    <script src="assets/js/cep.js"></script>
+</body>
+</html>
