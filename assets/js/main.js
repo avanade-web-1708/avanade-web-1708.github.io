@@ -1,7 +1,7 @@
 const nome = "Avanade";
 console.log(nome, " chamando a variável usando o var");
 
-escreve("Galo doido")
+escreve("")
 //Funcção nominal  -  Funções sofrem hoisting
 function escreve(x){
     console.log(x);
